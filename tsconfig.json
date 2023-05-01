@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "lib_js",
+    "baseUrl": "./",
+    "target": "ESNext",
+    "module": "ES6",
+    "noEmitOnError": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "noUncheckedIndexedAccess": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "lib/types",
+    "allowImportingTsExtensions": false
+  },
+    "include": ["lib/lib.ts"],
+    "exclude": ["node_modules", "test"]
+}
