@@ -6,6 +6,6 @@
 
 ### Functions
 
-**removeFalsy** - Recursively remove falsy values except 0 and false from any type. Trim strings and remove empty strings. Return false if all values are falsy.
+**removeFalsy** - Recursively remove falsy values from any types of data, including nested objects and arrays. It also removes empty strings and trims strings. It returns false if the data is empty after removing falsy values.
 
 
