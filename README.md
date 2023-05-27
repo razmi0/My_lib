@@ -1,7 +1,7 @@
 # UnitTest
 <br>
 
-**Personal unit test lib for JS**
+**Personal unit/utility test lib for JS**
 <br>
 
 ### Functions
