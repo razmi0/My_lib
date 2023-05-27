@@ -1,7 +1,14 @@
 // Lib functions file
 // --
 
-type GT = any[] | any;
+type RF = any[] | any;
+type STT = {
+  success: boolean;
+  execution?: string;
+  parameters?: any[];
+  return?: any;
+  time?: string;
+};
 
 /**
  * Recursively remove  falsy values from any types of data, including nested objects and arrays. It also removes empty strings and trims strings. It returns false if the data is empty after removing falsy values.
@@ -9,7 +16,10 @@ type GT = any[] | any;
  * @param deleteFlag If true, it will delete the [key : value] if the value is falsy. If false, it will only replace the falsy value by false.
  * @returns data | false | 0
  */
-export function removeFalsy(data: GT | GT[], deleteFlag : boolean): GT | GT[] | false {
+export function removeFalsy(
+  data: RF | RF[] = false,
+  deleteFlag: boolean = false
+): RF | RF[] | false {
   if (Array.isArray(data)) {
     for (let i = 0; i < data.length; i++) {
       if (data[i] === undefined || data[i] === null || data[i] === "") {
@@ -36,7 +46,7 @@ export function removeFalsy(data: GT | GT[], deleteFlag : boolean): GT | GT[] | 
         data[key] = value.trim();
       }
       if (value === undefined || value === null || value === "") {
-        deleteFlag ? delete data[key] : data[key] = false;
+        deleteFlag ? delete data[key] : (data[key] = false);
       }
       if (typeof value === "object" || Array.isArray(value)) {
         removeFalsy(value, deleteFlag);
@@ -50,4 +60,41 @@ export function removeFalsy(data: GT | GT[], deleteFlag : boolean): GT | GT[] | 
   }
 
   return data || 0 ? data : false;
+}
+
+/**
+ * Sync Function to get the execution time of a function on console
+ * @Sync
+ * @param {CallableFunction} fc Function to be executed
+ * @param {any | any[]} parameters Parameters of the function to be executed
+ * @returns {Object}  return a summary object of the execution
+ */
+export function syncTime(fc: CallableFunction, parameters: any[]): STT {
+  let flag = false;
+  let returnedValue = null;
+  if (parameters.length > 0) {
+    flag = true;
+  }
+  try {
+    /** START MEASURE  */
+    const t1 = performance.now();
+    flag ? (returnedValue = fc(...parameters)) : (returnedValue = fc());
+    const t2 = performance.now();
+    /** END MEASURE  */
+    if (!returnedValue) {
+      returnedValue = "No return value";
+    }
+    return {
+      success: true,
+      execution: `${fc.name}${
+        flag ? " with " + parameters.length + " parameters" : "()"
+      }`,
+      parameters: parameters,
+      return: returnedValue,
+      time: `${(t2 - t1).toFixed(4)} ms`,
+    };
+  } catch (error) {
+    console.error(error);
+    return { success: false };
+  }
 }

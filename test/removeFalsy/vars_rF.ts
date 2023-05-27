@@ -1,11 +1,7 @@
-// Contain all the variables used to test functions
+// Contain all the variables used to test removeFalsy
 // path : test/var.ts
 // --
 
-
-// START REMOVEFALSY VAR 
-//---------------------------------------------//
-//
 const object = {
     a: null,
     b: -1,
@@ -74,4 +70,4 @@ const object = {
   boolArray        = [true, false];
 //---------------------------------------------//
 export { object, array, string, spacedString, nullString, nonTrimmedString, int, nullInt, bool, nullBool, boolArray, und, nullVar };
-// END REMOVE FALSY VAR
+

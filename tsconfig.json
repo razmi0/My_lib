@@ -12,8 +12,13 @@
     "sourceMap": true,
     "declaration": true,
     "declarationDir": "lib/types",
-    "allowImportingTsExtensions": false,
+    "allowImportingTsExtensions": false
   },
-    "include": ["lib.ts","test/*"],
-    "exclude": ["node_modules"]
+  "include": [
+    "lib.ts",
+    "test/*",
+    "test/removeFalsy/*",
+    "test/syncTime/*",
+  ],
+  "exclude": ["node_modules"]
 }
