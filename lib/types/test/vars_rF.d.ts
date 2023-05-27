@@ -56,4 +56,4 @@ declare const object: {
     } | null | undefined)[];
 } | boolean[] | null | undefined)[], und: undefined, nullVar: null, string = "string", spacedString = "   ", nullString = "", nonTrimmedString = "    string    ", int = 12, nullInt = 0, bool = true, nullBool = false, boolArray: boolean[];
 export { object, array, string, spacedString, nullString, nonTrimmedString, int, nullInt, bool, nullBool, boolArray, und, nullVar };
-//# sourceMappingURL=var.d.ts.map
+//# sourceMappingURL=vars_rF.d.ts.map

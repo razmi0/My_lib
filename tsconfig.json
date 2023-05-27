@@ -14,6 +14,6 @@
     "declarationDir": "lib/types",
     "allowImportingTsExtensions": false,
   },
-    "include": ["lib.ts","test/main.ts","test/var.ts"],
+    "include": ["lib.ts","test/*"],
     "exclude": ["node_modules"]
 }

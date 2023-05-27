@@ -4,7 +4,7 @@
 //---------------------------------------------//
 
 import { removeFalsy } from "../lib.js";
-import * as test from "./var.js";
+import * as test from "./vars_rF.js";
 
 //---------------------------------------------//
 const t1                     = performance.now();
