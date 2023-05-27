@@ -1,0 +1,15 @@
+{
+  "name": "my_lib",
+  "version": "1.0.0",
+  "description": "<br>",
+  "main": "lib/js/main.js",
+  "type" : "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

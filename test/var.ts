@@ -1,8 +1,11 @@
-// Contain all the variables used in the test
+// Contain all the variables used to test functions
 // path : test/var.ts
 // --
 
+
+// START REMOVEFALSY VAR 
 //---------------------------------------------//
+//
 const object = {
     a: null,
     b: -1,
@@ -12,13 +15,13 @@ const object = {
     f: "    string    ",
     g: 0,
     h: {
-      x: "string",
-      xx: undefined,
-      xxx: null,
-      xxxx: 0,
-      xxxxx: " ",
-      xxxxxx: "",
-      xxxxxxx: "    string    ",
+      x       : "string",
+      xx      : undefined,
+      xxx     : null,
+      xxxx    : 0,
+      xxxxx   : " ",
+      xxxxxx  : "",
+      xxxxxxx : "    string    ",
       xxxxxxxx: 1,
     },
     i: [
@@ -31,13 +34,13 @@ const object = {
       "string",
       "    string    ",
       {
-        x: "string",
-        xx: undefined,
-        xxx: null,
-        xxxx: 0,
-        xxxxx: " ",
-        xxxxxx: "",
-        xxxxxxx: "    string    ",
+        x       : "string",
+        xx      : undefined,
+        xxx     : null,
+        xxxx    : 0,
+        xxxxx   : " ",
+        xxxxxx  : "",
+        xxxxxxx : "    string    ",
         xxxxxxxx: 1,
       },
       [null, " ", "", 0, undefined, 1, "string", "    string    ", -1],
@@ -58,15 +61,17 @@ const object = {
     object,
     [null, " ", "", 0, undefined, 1, "string", "    string    ", -1],
   ],
-  string = "string",
-  nullString = "",
+  und              = undefined,
+  nullVar          = null,
+  string           = "string",
+  spacedString     = "   ",
+  nullString       = "",
   nonTrimmedString = "    string    ",
-  int = 12,
-  nullInt = 0,
-  bool = true,
-  nullBool = false,
-  boolArray = [true, false];
+  int              = 12,
+  nullInt          = 0,
+  bool             = true,
+  nullBool         = false,
+  boolArray        = [true, false];
 //---------------------------------------------//
-
-
-export { object, array, string, nullString, nonTrimmedString, int, nullInt, bool, nullBool, boolArray };
+export { object, array, string, spacedString, nullString, nonTrimmedString, int, nullInt, bool, nullBool, boolArray, und, nullVar };
+// END REMOVE FALSY VAR
