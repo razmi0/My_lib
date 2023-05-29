@@ -4,6 +4,7 @@
 
 **Personal unit/utility test lib for JS**
 <br>
+<hr/>
 
 ### Utilities
 
