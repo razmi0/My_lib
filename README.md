@@ -12,7 +12,7 @@ I used this functions in multiple project to test my code perfs or as utilities 
 
 ## Utilities
 
-🟢 **removeFalsy(data, deleteFlag)** <br><br>
+🟢 <h3>removeFalsy(data, deleteFlag)</h3>
 Recursively remove falsy values from any types of data, including nested objects and arrays. It also removes empty strings and trims strings. It returns false if the data is empty after removing falsy values.
 
 > @param { any | any[] } data<br>
@@ -21,7 +21,7 @@ Recursively remove falsy values from any types of data, including nested objects
 
 
 
-🟠 **mergeDeep(model, user)** <br><br>
+🟠 <h3>mergeDeep(model, user)</h3>
 Recursively merge user object in model object until user is empty. Keep [key : value] from model if not present in user. Add [key : value] from user if not present in model. If both are present, keep the one from user. <br>
 <h4>RETURN MODEL REFERENCE OBJECT</h4>
 
@@ -30,7 +30,7 @@ Recursively merge user object in model object until user is empty. Keep [key : v
 @returns { Object } merged object<br>
 
 
-🟢 **isObject(item)** <br><br>
+🟢 <h3>isObject(item)</h3>
 Check if item is an object. Returns true if data is an object, false otherwise.
 
 > @param { * } data<br>
@@ -39,7 +39,7 @@ Check if item is an object. Returns true if data is an object, false otherwise.
 
 ## Performances
 
-🔴 **syncTime(fc, parameters)**<br><br>
+🔴 <h3>syncTime(fc, parameters)</h3>
 Sync Function to get the execution time of a function on console. Returns an object with a summary of the execution. Summary completion is done after the function execution 💔 . <br>
 
 > @Sync
