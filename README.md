@@ -16,6 +16,7 @@ Recursively remove falsy values from any types of data, including nested objects
 > @param { any | any[] } data<br>
 > @param { boolean } deleteFlag If true, it will delete the [key : value] if the value is falsy. If false, it will only replace the falsy value by false.<br>
 > @returns { typeof data | boolean } data | false<br><br>
+
 <br><br>
 <h3>🟠 mergeDeep(model, user)</h3>
 Recursively merge user object in model object until user is empty. Keep [key : value] from model if not present in user. Add [key : value] from user if not present in model. If both are present, keep the one from user. <br>
@@ -24,6 +25,7 @@ Recursively merge user object in model object until user is empty. Keep [key : v
 > @param { Object } model<br>
 > @param { ...Object } user<br>
 > @returns { Object } merged object<br><br>
+
 <br><br>
 <h3>🟢 isObject(item)</h3>
 Check if item is an object. Returns true if data is an object, false otherwise.
