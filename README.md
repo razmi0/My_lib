@@ -2,13 +2,12 @@
 
 <br>
 I used this functions in multiple project to test my code perfs or as utilities functions. I decided to put them in a library to use them more easily and to share them with the community. I'm adding more functions as I need them. Feel free to use them and to contribute to the project. <br>
-<br><br>
+<br>
 
 🔴 : Not ready<br>
 🟠 : Main function is ready, but some features are missing<br>
 🟢 : Ready<br>
 
-<br><br>
 
 ## Utilities
 
