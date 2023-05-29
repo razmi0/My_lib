@@ -19,7 +19,7 @@ Recursively remove falsy values from any types of data, including nested objects
 
 **mergeDeep(model, user)**
 Recursively merge user object in model object until user is empty. Keep [key : value] from model if not present in user. Add [key : value] from user if not present in model. If both are present, keep the one from user. <br>
-*<span style="color:red">return model reference object</span>*
+*<span style="color:red;">return model reference object</span>*
 
 - @param { Object } model
 - @param { ...Object } user
