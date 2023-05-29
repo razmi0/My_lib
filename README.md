@@ -1,12 +1,11 @@
-# UnitTest
+# My_lib
 
 <br>
 
 **Personal unit/utility test lib for JS**
 <br>
-<hr/>
 
-### Utilities
+## Utilities
 
 **removeFalsy(data, deleteFlag)**<br>
 Recursively remove falsy values from any types of data, including nested objects and arrays. It also removes empty strings and trims strings. It returns false if the data is empty after removing falsy values.
@@ -27,9 +26,8 @@ Recursively merge user object in model object until user is empty. Keep [key : v
 
 
 
-<hr/>
 
-### Performances
+## Performances
 
 **syncTime(fc, parameters)**<br>
 Sync Function to get the execution time of a function on console. Deep copy of parameters if object needed (will be implemented and added to the lib). Returns an object with a summary of the execution.
