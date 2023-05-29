@@ -1,41 +1,45 @@
 # My_lib
 
 <br>
-
-**Personal unit/utility test lib for JS**
+I used this functions in multiple project to test my code perfs or as utilities functions. I decided to put them in a library to use them more easily and to share them with the community. I'm adding more functions as I need them. Feel free to use them and to contribute to the project. <br>
 <br>
 
 ## Utilities
 
-**removeFalsy(data, deleteFlag)**<br>
+**removeFalsy(data, deleteFlag)**<br><br>
 Recursively remove falsy values from any types of data, including nested objects and arrays. It also removes empty strings and trims strings. It returns false if the data is empty after removing falsy values.
 
-- @param { any | any[] } data
-- @param { boolean } deleteFlag If true, it will delete the [key : value] if the value is falsy. If false, it will only replace the falsy value by false.
-- @returns { typeof data | boolean } data | false
+> @param { any | any[] } data
+@param { boolean } deleteFlag If true, it will delete the [key : value] if the value is falsy. If false, it will only replace the falsy value by false.
+@returns { typeof data | boolean } data | false
 
 
 
-**mergeDeep(model, user)**<br>
+**mergeDeep(model, user)**<br><br>
 Recursively merge user object in model object until user is empty. Keep [key : value] from model if not present in user. Add [key : value] from user if not present in model. If both are present, keep the one from user. <br>
 <h4>RETURN MODEL REFERENCE OBJECT</h4>
 
-- @param { Object } model
-- @param { ...Object } user
-- @returns { Object } merged object
+> @param { Object } model
+@param { ...Object } user
+@returns { Object } merged object
 
 
+**isObject(item)**<br><br>
+Check if item is an object. Returns true if data is an object, false otherwise.
+
+> @param { * } data
+@returns { boolean } true | false
 
 
 ## Performances
 
-**syncTime(fc, parameters)**<br>
+**syncTime(fc, parameters)**<br><br>
 Sync Function to get the execution time of a function on console. Deep copy of parameters if object needed (will be implemented and added to the lib). Returns an object with a summary of the execution.
 
-- @Sync
-- @param { Function } fc Function to be executed
-- @param { any | any[] } parameters Parameters of the function to be executed
-- @returns { Object } return a summary object of the execution
+> @Sync
+@param { Function } fc Function to be executed
+@param { any | any[] } parameters Parameters of the function to be executed
+@returns { Object } return a summary object of the execution
 
 For this function sum :
 

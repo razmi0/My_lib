@@ -1,6 +1,5 @@
 /**
- * Evaluate if item is an object. Used in mergeDeepObj()
- * @private
+ * Evaluate if item is an object.
  * @param { * } item
  * @returns { boolean }
  */
