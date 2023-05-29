@@ -1,9 +1,9 @@
 // Contain all the variables used to test syncTimeTest
-// path : test/vars_sTT.ts
+// path : test/vars_sT.ts
 //--
 
 // ---------------------------------------------//
-import { removeFalsy } from "../../lib.js";
+import { removeFalsy } from "../../lib_module.js";
 
 function noParamNoReturn() {
   console.log("noParamNoReturn exec : " + 10 * 10); // ok
@@ -23,7 +23,8 @@ function twoParamNoReturn(param: number, param2: number) {
 function twoParamReturn(param: number, param2: number) {
   return "TwoParamNoReturn exec : " + param * param2;
 }
-function sum (a:number,b:number):void{
+function sum(a: number, b: number): void {
+    // @ts-ignore
   const c = a + b;
 }
 const data_1 = {

@@ -3,7 +3,7 @@
 
 //---------------------------------------------//
 
-import { removeFalsy } from "../../lib.js";
+import { removeFalsy } from "../../lib_module.js";
 import * as test from "./vars_rF.js";
 
 //---------------------------------------------//

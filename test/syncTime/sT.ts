@@ -5,7 +5,7 @@
 
 //---------------------------------------------//
 
-import { syncTime } from "../../lib.js";
+import { syncTime } from "../../lib_module.js";
 import * as test from "./vars_sT.js";
 
 //---------------------------------------------//

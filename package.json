@@ -2,8 +2,8 @@
   "name": "my_lib",
   "version": "1.0.0",
   "description": "<br>",
-  "main": "lib/js/main.js",
-  "type" : "module",
+  "main": "lib/js/lib_module.js",
+  "type": "module",
   "directories": {
     "lib": "lib"
   },
@@ -11,5 +11,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }

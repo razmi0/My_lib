@@ -2,10 +2,23 @@
   "compilerOptions": {
     "outDir": "./lib/js",
     "baseUrl": "./",
-    "target": "ESNext",
+    "target": "ES2017",
     "module": "ES6",
     "noEmitOnError": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+
     "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictBindCallApply": true,
+    "alwaysStrict": true,
     "moduleResolution": "node",
     "noUncheckedIndexedAccess": true,
     "declarationMap": true,
@@ -14,11 +27,6 @@
     "declarationDir": "lib/types",
     "allowImportingTsExtensions": false
   },
-  "include": [
-    "lib.ts",
-    "test/*",
-    "test/removeFalsy/*",
-    "test/syncTime/*",
-  ],
+  "include": ["*", "test/*", "test/removeFalsy/*", "test/syncTime/*", "test/mergeDeep/*"],
   "exclude": ["node_modules"]
 }

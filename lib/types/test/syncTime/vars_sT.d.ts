@@ -1,4 +1,4 @@
-import { removeFalsy } from "../../lib.js";
+import { removeFalsy } from "../../lib_module.js";
 declare function noParamNoReturn(): void;
 declare function noParamReturn(): string;
 declare function oneParamNoReturn(param: number): void;
